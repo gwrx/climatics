@@ -11,7 +11,7 @@ You take:
 
 ## Main Purpose of this Repo
 
-Our local [Hackerspace](https://it-syndikat.org) got an old AC and repaired it. Now, to prevent nasty discussions about the power bill, I thought it might be a cool idea to keep track of the power consumption of the AC and use an coin acceptor for this.
+Our local [Hackerspace IT-Syndikat](https://it-syndikat.org) got an old AC and repaired it. Now, to prevent nasty discussions about the power bill, I thought it might be a cool idea to keep track of the power consumption of the AC and use an coin acceptor for this.
 
 * insert a coin in the box and keep track of it
 * report the credit to a more or less secure server to make shure it won't be lost on power failure
@@ -36,3 +36,22 @@ Our local [Hackerspace](https://it-syndikat.org) got an old AC and repaired it. 
 * a [TFT Display](https://www.aliexpress.com/item/3-0-inch-TFT-LCD-Touch-Screen-Module-240-x-400-SPI-RGB-Display-For-Raspberry/32713346673.html) to be a bit useful
 * a [4x4 Keypad](https://www.aliexpress.com/item/Free-shipping-10PCS-LOT-4-4-Matrix-Array-Matrix-Keyboard-16-Key-Membrane-Switch-Keypad-for/1879700029.html) to be really useful
 * some sort of box, some wires etc...
+
+
+#### Pinouts used on RaspberryPi (1st gen)
+
+Pin 1: Connected to breadboard to power the PullDowns with 3.3V (will be changed, Raspberry Pi has an internal PullDown)
+Pin 3: Connected to NRI-G40 Pin 9
+Pin 4: Connected to 5V power source to power the Raspberry Pi
+Pin 5: Connected to NRI-G40 Pin 10
+Pin 6: Connected to Common Ground (All grounds are connected together)
+Pin 7: Connected to NRI-G40 Pin 13
+
+
+#### Pinouts used on NRI-G40
+
+Pin 8: 12-24 V power source (we use 19V, doesn't work properly below 16V)
+Pin 9: Connected to Raspberry Pi Pin 3
+Pin 10: Connected to Raspberry Pi Pin 5
+Pin 13: Connected to Raspberry Pi Pin 7
+Pin 16: Connected to Common Ground
